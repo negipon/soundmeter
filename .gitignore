@@ -1,0 +1,10 @@
+*.py[cod]
+.DS_Store
+*.swp
+build
+dist
+*.egg-info
+run.py
+test-output
+test.sh
+.tox
