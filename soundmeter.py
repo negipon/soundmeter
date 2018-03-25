@@ -22,7 +22,7 @@ RANGE_NAME = 'A1'
 SHEET_FLAG = 0
 DURATION = '60'
  
-CLIENT_SECRET_FILE = 'client_secret.json'
+CLIENT_SECRET_FILE = './client_secret.json'
 CREDENTIAL_FILE = "./credential.json"
 APPLICATION_NAME = 'Soundmeter Appender'
 
