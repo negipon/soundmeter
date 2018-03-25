@@ -8,3 +8,5 @@ run.py
 test-output
 test.sh
 .tox
+client_secret.json
+credential.json
