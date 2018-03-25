@@ -68,7 +68,7 @@ else:
   service.spreadsheets().batchUpdate(spreadsheetId=SPREADSHEET_ID, body=BATCH_UPDATE_SPREADSHEET_REQUEST_BODY).execute()
 
 # soundmeterをコマンド実行
-cmd = '/usr/local/bin/soundmeter -s ' + DURATION
+cmd = '/usr/local/bin/soundmeter -s' + DURATION
 output = subprocess.getoutput(cmd)
 jsonobj = {"data": []}
 
@@ -76,7 +76,7 @@ jsonobj = {"data": []}
 for line in output.split('\n'):
   m = line.split('\r')
   for e in m:
-    dB = re.sub('[\s+]', '', e,).replace('Timeout', '')
+    dB = re.sub('[\s+]', '', e).replace('Timeout', '')
     if dB != '':
       jsonobj["data"].append([str(datetime.fromtimestamp(TIME_STAMP)),dB])
       TIME_STAMP += 1
